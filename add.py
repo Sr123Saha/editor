@@ -51,8 +51,9 @@ window.config(menu=file_menu)
 view_menu =Menu(main_menu, tearoff=0)
 view_menu_sub = Menu(view_menu, tearoff=0)
 font_menu_sub = Menu(view_menu, tearoff=0)
-view_menu_sub.add_command(label='убогая',command=lambda: chenge_theme('dark'))
-view_menu_sub.add_command(label='скушная',command=lambda: chenge_theme('light'))
+view_menu_sub.add_command(label='убогая',command=lambda: chenge_theme('ybogi'))
+view_menu_sub.add_command(label='скушная_т',command=lambda: chenge_theme('dark'))
+view_menu_sub.add_command(label='скушная_с',command=lambda: chenge_theme('light'))
 view_menu.add_cascade(label='Тема',menu=view_menu_sub)
 
 font_menu_sub.add_command(label='Arial',command=lambda: chenge_fonts('Arial'))
@@ -82,8 +83,13 @@ view_colors = {
             'text_fg': 'black', 
             'cursor':'brown',
             'select_bg': '#B8D4D4'  
+        },
+        'ybogi':{
+            'text_bg': '#B8D4D4', 
+            'text_fg': '#000000', 
+            'cursor':'brown',
+            'select_bg': '#B8D4D4'  
         }
-
 }
 
 fonts = {
